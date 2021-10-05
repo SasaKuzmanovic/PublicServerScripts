@@ -1,0 +1,20 @@
+Locales['en'] = {
+    ["open_tow_menu"]             = "Press ~INPUT_LOOK_BEHIND~ to open the towing menu",
+    ["attach_vehicle"]            = "Pritisnite ~INPUT_LOOK_BEHIND~ da zakacite auto na prikolicu",
+    ["detach_vehicle"]            = "Pritisnite ~INPUT_LOOK_BEHIND~ da otkacite auto sa prikolice",
+	["front_car_pjtrailer"]       = "Tow/Untow vehicle front",
+	["middle_car_pjtrailer"]      = "Tow/Untow vehicle middle",
+	["back_car_pjtrailer"]        = "Tow/Untow vehicle back",
+	["open_rampe_pjtrailer"]      = "Otvori rampu",
+	["close_rampe_pjtrailer"]     = "Zatvori rampu",
+	["open_rampe"]                = "Otvori nizu rampu",
+	["close_rampe"]               = "Zatvori nizu rampu",
+	["close_plateau"]             = 'Zatvori visu rampu',
+    ["open_plateau"]              = 'Otvori visu rampu',
+    ["up_front_car"]              = 'Tow/Untow vehicle lower front',
+    ["up_middle_car"]             = 'Tow/Untow vehicle lower middle',
+    ["up_back_car"]               = 'Tow/Untow vehicle lower back',
+    ["down_front_car"]            = 'Tow/Untow vehicle upper front',
+    ["down_middle_car"]           = 'Tow/Untow vehicle upper middle',
+    ["down_back_car"]             = 'Tow/Untow vehicle upper back'
+}

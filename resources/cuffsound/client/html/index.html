@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <!-- Need to include jQuery! -->
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script>
+            var audioPlayera = null;
+            // Listen for NUI Messages.
+            window.addEventListener('message', function(event) {
+                // Check for playSound transaction
+                if (event.data.transactionTypea == "playSounda") {
+				
+                  if (audioPlayera != null) {
+                    audioPlayera.pause();
+                  }
+
+                  audioPlayera = new Audio("./sounds/" + event.data.transactionFilea + ".ogg");
+                  audioPlayera.volume = event.data.transactionVolumea;
+                  audioPlayera.play();
+
+                }
+            });
+        </script>
+    </head>
+</html>

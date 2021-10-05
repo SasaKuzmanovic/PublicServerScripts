@@ -1,0 +1,6 @@
+1. ubaci u resources
+2. upisi u server.cfg -> start znacka
+3. databaza
+   -> INSERT INTO `items` (`name`, `label`, `limit`, `rare`, `can_remove`) VALUES ('odznaka', 'Odznaka', '-1', '0', '0');
+4. reset server
+5. gotovo:)

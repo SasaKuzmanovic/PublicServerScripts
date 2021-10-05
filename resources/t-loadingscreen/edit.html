@@ -1,0 +1,47 @@
+
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hugo Roleplay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="keks.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700" rel="stylesheet">
+</head>
+<body>
+	<video id="intro" style="width: 100%; height: 100%;" autoplay>
+		<source src="videoIntro.mp4" type="video/mp4">
+	</video>
+    <h1 class="enable_music"> Pritisni<strong> SPACE </strong> da ugasiš muziku </h1>
+	
+	
+    <audio id="leson" src="pjesma.mp3" hidden="true" loop="true" autoplay="true" />
+    <script>
+
+    var play = true;
+    var myAudio = document.getElementById("leson");
+    var myVideo = document.getElementById("intro");
+	myVideo.volume = 0.3;
+	myVideo.muted = false;
+	
+    function onKeyDown(event) {
+            switch (event.keyCode) {
+                case 32: //SpaceBar                    
+                    if (play) {
+						myVideo.muted = true;
+                        play = false;
+                    } else {
+                        myVideo.muted = false;
+                        play = true;
+                    }
+                    break;
+            }
+      return false;
+    }
+
+    window.addEventListener("keydown", onKeyDown, false);
+    </script>
+
+</body>
+</html>

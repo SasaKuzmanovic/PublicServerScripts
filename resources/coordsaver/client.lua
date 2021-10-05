@@ -1,0 +1,12 @@
+RegisterNetEvent("SaveCommand")
+AddEventHandler("SaveCommand", function(kom)
+		x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), true))
+	    TriggerServerEvent("SaveCoords" , x , y , z, kom)			
+end)
+
+RegisterNetEvent("SaveCommand2")
+AddEventHandler("SaveCommand2", function(kom)
+		x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), true))
+		local h = GetEntityHeading(GetPlayerPed(-1))
+	    TriggerServerEvent("SaveCoords2" , x , y , z , h, kom)			
+end)
